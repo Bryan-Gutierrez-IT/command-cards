@@ -1,0 +1,45 @@
+      <!--- CARD BEGIN --->
+      <a class="cmd-card card-link" data-rarity="RARITY" href="card.php?card=CB64">
+        <div class="cmd-card__accent"></div>
+        <div class="cmd-card__inner">
+          <div class="card-top">
+            <div>
+              <div class="cmd-name">COMMAND_NAME</div>
+              <div class="rarity-label">RARITY</div>
+            </div>
+          </div>
+
+          <div class="args">LAST_RUN</div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="k">Executions</div>
+              <div class="v">TOTAL_EXECUTIONS</div>
+            </div>
+            <div class="stat">
+              <div class="k">Rank</div>
+              <div class="v">RANK</div>
+            </div>
+            <div class="stat">
+              <div class="k">Arg Density</div>
+              <div class="v">ARG_DENSITY</div>
+            </div>
+            <div class="stat">
+              <div class="k">Redirection</div>
+              <div class="v">REDIRECTION</div>
+            </div>
+          </div>
+
+          <div class="mastery">
+          <span>Mastery</span>
+          <div class="bar" style="--pct: MASTERY%;">
+            <span></span>
+          </div>
+        </div>
+
+          <div class="footer">
+            FLAVOR_TEXT
+          </div>
+        </div>
+      </a>
+      <!--- CARD END --->

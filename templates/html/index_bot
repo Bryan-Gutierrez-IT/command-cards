@@ -1,0 +1,199 @@
+  <script>
+    // ----- Button styling (no CSS file changes needed) -----
+    (function injectSortButtonStyles(){
+      const style = document.createElement('style');
+      style.textContent = `
+        .sort-btn{
+          font-family: var(--mono);
+          font-size: 12px;
+          letter-spacing: .10em;
+          text-transform: uppercase;
+          color: var(--green2);
+          background: rgba(0,0,0,.22);
+          border: 1px solid var(--line);
+          border-radius: 999px;
+          padding: 8px 10px;
+          cursor: pointer;
+          transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease, background .12s ease;
+          display:inline-flex;
+          align-items:center;
+          gap:8px;
+          user-select:none;
+        }
+        .sort-btn:hover{
+          transform: translateY(-1px);
+          border-color: rgba(44,255,115,.35);
+          box-shadow: 0 0 18px rgba(44,255,115,.10);
+          background: rgba(0,0,0,.28);
+        }
+        .sort-btn[aria-pressed="true"]{
+          border-color: rgba(44,255,115,.50);
+          box-shadow: 0 0 22px rgba(44,255,115,.12);
+        }
+        .sort-btn .arrow{
+          font-size: 12px;
+          opacity: .85;
+        }
+      `;
+      document.head.appendChild(style);
+    })();
+
+    const grid = document.getElementById('cardGrid');
+    const buttons = Array.from(document.querySelectorAll('#sortControls .sort-btn'));
+
+    // Sorting state
+    let currentSort = 'rank';
+    let currentDir = 'asc'; // 'asc' | 'desc'
+
+    // Rarity order: Common < Rare < Epic < Legendary
+    const rarityOrder = { common: 0, rare: 1, epic: 2, legendary: 3 };
+
+    function normText(s){ return (s || '').trim().toLowerCase(); }
+
+    function getCommandName(card){
+      return normText(card.querySelector('.cmd-name')?.textContent);
+    }
+
+    function getStatNumber(card, label){
+      const want = normText(label);
+      const stats = Array.from(card.querySelectorAll('.stat'));
+      for (const s of stats){
+        const k = normText(s.querySelector('.k')?.textContent);
+        if (k === want){
+          const v = (s.querySelector('.v')?.textContent || '').trim();
+          const n = Number.parseFloat(v);
+          return Number.isFinite(n) ? n : Number.POSITIVE_INFINITY;
+        }
+      }
+      return Number.POSITIVE_INFINITY;
+    }
+
+    function getRank(card){
+      const n = getStatNumber(card, 'Rank');
+      return Number.isFinite(n) ? n : Number.POSITIVE_INFINITY;
+    }
+
+    function getArgDensity(card){
+      return getStatNumber(card, 'Arg Density');
+    }
+
+    function getRedirection(card){
+      return getStatNumber(card, 'Redirection');
+    }
+
+    function getRarity(card){
+      const raw = normText(card.getAttribute('data-rarity'));
+      return Object.prototype.hasOwnProperty.call(rarityOrder, raw) ? rarityOrder[raw] : 999;
+    }
+
+    function dirMul(){ return currentDir === 'asc' ? 1 : -1; }
+
+    function stableTieBreak(a,b){
+      // Always keep ties consistent: rank asc, then name asc
+      const ra = getRank(a), rb = getRank(b);
+      if (ra !== rb) return ra - rb;
+      return getCommandName(a).localeCompare(getCommandName(b));
+    }
+
+    function compare(a,b){
+      const mul = dirMul();
+
+      if (currentSort === 'rank'){
+        const da = getRank(a), db = getRank(b);
+        if (da !== db) return (da - db) * mul;
+        return stableTieBreak(a,b);
+      }
+
+      if (currentSort === 'name'){
+        const da = getCommandName(a), db = getCommandName(b);
+        const c = da.localeCompare(db);
+        if (c !== 0) return c * mul;
+        return stableTieBreak(a,b);
+      }
+
+      if (currentSort === 'argDensity'){
+        const da = getArgDensity(a), db = getArgDensity(b);
+        if (da !== db) return (da - db) * mul;
+        return stableTieBreak(a,b);
+      }
+
+      if (currentSort === 'redirection'){
+        const da = getRedirection(a), db = getRedirection(b);
+        if (da !== db) return (da - db) * mul;
+        return stableTieBreak(a,b);
+      }
+
+      if (currentSort === 'rarity'){
+        // Primary: rarity (asc/desc). Tie-break: rank ASC always (per your rule).
+        const da = getRarity(a), db = getRarity(b);
+        if (da !== db) return (da - db) * mul;
+
+        // ties in rarity -> sorted by rank (always ascending)
+        const ra = getRank(a), rb = getRank(b);
+        if (ra !== rb) return ra - rb;
+
+        // extra stability
+        return getCommandName(a).localeCompare(getCommandName(b));
+      }
+
+      return 0;
+    }
+
+    function sortCards(){
+      const cards = Array.from(grid.querySelectorAll('.cmd-card'));
+      cards.sort(compare);
+      for (const card of cards) grid.appendChild(card);
+    }
+
+    function renderButtonState(){
+      for (const btn of buttons){
+        const isActive = btn.dataset.sort === currentSort;
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+
+        // Restore base label (strip any existing arrow)
+        const base = btn.dataset.baseLabel || btn.textContent.replace(/[▲▼]\s*$/, '').trim();
+        btn.dataset.baseLabel = base;
+        btn.textContent = base;
+
+        if (isActive){
+          const arrow = currentDir === 'asc' ? '▲' : '▼';
+          const span = document.createElement('span');
+          span.className = 'arrow';
+          span.textContent = arrow;
+          btn.appendChild(span);
+        }
+      }
+    }
+
+    // Click behavior:
+    // - clicking a different sort sets asc
+    // - clicking the same sort toggles asc/desc
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mode = btn.dataset.sort;
+
+        if (mode === currentSort){
+          currentDir = (currentDir === 'asc') ? 'desc' : 'asc';
+        } else {
+          currentSort = mode;
+          currentDir = 'asc';
+        }
+
+        renderButtonState();
+        sortCards();
+      });
+    });
+
+    // Default sort on load: Rank asc
+    renderButtonState();
+    sortCards();
+  </script>
+
+  </main>
+  <div>
+  <p>
+    <small>Generated on DATE</small>
+  </p>
+  </div>
+</body>
+</html>

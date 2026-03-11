@@ -1,0 +1,703 @@
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+apt upgrade --without-new-pkgs
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+vim write.c
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+egrep 9001 scores.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+sed -i 's/bookworm/trixie/g' notes.txt
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+gcc write.c -o write
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+man wait
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+rm website.tar.gz
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+exit
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+git status
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+grep TODO notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+cat notes.txt
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+mkdir build
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+touch report.txt
+pwd
+pwd
+pwd
+pwd
+pwd
+pwd
+pwd
+pwd
+pwd
+pwd

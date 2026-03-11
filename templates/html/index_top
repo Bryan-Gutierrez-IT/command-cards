@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Linux Command Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="page">
+    <header class="header">
+      <div>
+        <div class="h-title">Command Cards</div>
+        <div class="h-sub">Where your history becomes power</div>
+      </div>
+
+      <!-- SORT CONTROLS -->
+      <div class="h-sub" style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+        <span style="color: var(--muted); letter-spacing:.08em; text-transform:uppercase; font-size:12px;">Sort</span>
+
+        <div id="sortControls" style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button type="button" class="sort-btn" data-sort="rank">Rank</button>
+          <button type="button" class="sort-btn" data-sort="name">Command</button>
+          <button type="button" class="sort-btn" data-sort="rarity">Rarity</button>
+          <button type="button" class="sort-btn" data-sort="argDensity">Arg Density</button>
+          <button type="button" class="sort-btn" data-sort="redirection">Redirection</button>
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <p>
+        EXECUTIONS executions, COMMANDS commands, ARGUMENTS arguments, and REDIRECTS redirects analyzed
+      </p>
+    </div>
+
+    <main class="card-grid" id="cardGrid">

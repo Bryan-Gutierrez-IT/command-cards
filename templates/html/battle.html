@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Command Cards — Battle Setup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div>
+        <div class="h-title">Command Cards</div>
+        <div class="h-sub">Battle Setup</div>
+      </div>
+      <div class="h-sub">
+        <a href="index.html" style="color: var(--green2); text-decoration: none; border-bottom: 1px dashed var(--line);">
+          ← Back to collection
+        </a>
+      </div>
+    </header>
+
+    <main class="card-grid" style="grid-template-columns: 1fr; max-width: 980px; margin: 0 auto;">
+      <section class="cmd-card battle-form" data-rarity="Battle" aria-label="Battle form">
+        <div class="cmd-card__accent" aria-hidden="true"></div>
+
+        <div class="cmd-card__inner">
+          <div class="card-top">
+            <div>
+              <div class="cmd-name">Battle Input</div>
+              <div class="rarity-label">ENTER TWO CARD CODES</div>
+            </div>
+
+            <button type="button" class="card-action-btn battle-btn" id="battleBtn"> 
+                            Enter Battle
+            </button>
+          </div>
+
+          <div class="args">Tip: you can click a card on the single-card page to copy its Card Code.</div>
+
+          <form id="battleForm" autocomplete="off" style="margin-top: 12px;">
+            <div class="battle-fields">
+              <label class="battle-label" for="cardA">Card Code A</label>
+              <textarea
+                id="cardA"
+                class="battle-input"
+                rows="5"
+                placeholder="Paste Card Code A here..."
+                spellcheck="false"
+              ></textarea>
+
+              <label class="battle-label" for="cardB">Card Code B</label>
+              <textarea
+                id="cardB"
+                class="battle-input"
+                rows="5"
+                placeholder="Paste Card Code B here..."
+                spellcheck="false"
+              ></textarea>
+            </div>
+
+            <div class="battle-actions">
+              <button type="button" class="card-action-btn" id="swapBtn">Swap</button>
+              <button type="button" class="card-action-btn" id="clearBtn">Clear</button>
+              <div class="battle-status" id="battleStatus">Ready.</div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const a = document.getElementById('cardA');
+    const b = document.getElementById('cardB');
+    const status = document.getElementById('battleStatus');
+
+    function setStatus(msg, ok=true){
+      status.textContent = msg;
+      status.style.color = ok ? 'var(--muted)' : 'var(--green2)';
+    }
+
+    document.getElementById('swapBtn').addEventListener('click', () => {
+      const tmp = a.value;
+      a.value = b.value;
+      b.value = tmp;
+      setStatus('Swapped.');
+    });
+
+    document.getElementById('clearBtn').addEventListener('click', () => {
+      a.value = '';
+      b.value = '';
+      setStatus('Cleared.');
+    });
+
+    document.getElementById('battleBtn').addEventListener('click', () => {
+      const va = a.value.trim();
+      const vb = b.value.trim();
+      if (!va || !vb) return setStatus('Paste two Card Codes strings first.', false);
+
+      // For now: placeholder action. You can replace this with navigation or decode logic.
+      setStatus('Locked in. (Hook up battle logic next.)');
+      // Example: window.location.href = `battle.html?a=${encodeURIComponent(va)}&b=${encodeURIComponent(vb)}`;
+    });
+
+    // Optional: Cmd+Enter / Ctrl+Enter triggers battle
+    document.getElementById('battleForm').addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        document.getElementById('battleBtn').click();
+      }
+    });
+  </script>
+
+  <style>
+    /* These styles use your theme variables but don't require modifying styles.css */
+
+    .battle-fields{
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .battle-label{
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      margin-top: 8px;
+    }
+
+    .battle-input{
+      width: 100%;
+      resize: vertical;
+      min-height: 110px;
+      border-radius: 14px;
+      border: 1px solid rgba(44,255,115,.16);
+      background: linear-gradient(180deg, rgba(0,0,0,.22), rgba(0,0,0,.10));
+      color: var(--green2);
+      font-family: var(--mono);
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 12px 12px;
+      outline: none;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.25);
+    }
+
+    .battle-input:focus{
+      border-color: rgba(44,255,115,.38);
+      box-shadow: 0 0 18px rgba(44,255,115,.10), inset 0 0 0 1px rgba(0,0,0,.25);
+    }
+
+    .battle-actions{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+
+    .battle-status{
+      margin-left: auto;
+      font-size: 12px;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    /* Button class used earlier in your project; included here just in case */
+    .card-action-btn{
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(0,0,0,.25);
+      color: var(--green2);
+      cursor: pointer;
+      transition: all .15s ease;
+    }
+    .card-action-btn:hover{
+      transform: translateY(-2px);
+      border-color: rgba(44,255,115,.35);
+      box-shadow: 0 0 18px rgba(44,255,115,.15);
+    }
+    .card-action-btn:active{ transform: translateY(0); }
+
+    .battle-btn{
+    border-color: rgba(255, 60, 60, .35);
+    color: #ff4d4d;
+    background: linear-gradient(
+        180deg,
+        rgba(80, 0, 0, .35),
+        rgba(40, 0, 0, .25)
+    );
+    box-shadow: 0 0 18px rgba(255, 0, 0, .08);
+    }
+
+    .battle-btn:hover{
+    border-color: rgba(255, 60, 60, .6);
+    color: #ff8080;
+    box-shadow: 0 0 24px rgba(255, 0, 0, .25);
+    transform: translateY(-2px);
+    }
+
+    .battle-btn:active{
+    transform: translateY(0);
+    box-shadow: 0 0 12px rgba(255, 0, 0, .2);
+    }
+
+    .cmd-card.battle-form:hover {
+    transform: none;
+    box-shadow: var(--shadow); /* keep original base shadow */
+    }
+  </style>
+</body>
+</html>
